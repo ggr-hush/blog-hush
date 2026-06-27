@@ -4,20 +4,13 @@
 // Replace each field with your real information before deploying.
 export const siteConfig = {
   siteName: "Hush's Blog",
-  siteDescription: "技术学习与个人知识沉淀。",
-  siteUrl: "https://your-domain.example.com",
+  siteDescription: "个人技术沉淀和日常分享。",
+  siteUrl: "https://blog-hush.vercel.app/",
   author: "Hush",
-  email: "you@example.com",
-  github: "https://github.com/your-handle",
-  githubName: "your-handle",
-  zhihu: "https://www.zhihu.com/people/your-handle",
-  zhihuName: "your-handle",
-  xiaohongshu: "https://www.xiaohongshu.com/user/your-handle",
-  xiaohongshuName: "your-handle",
-  douyin: "https://www.douyin.com/user/your-handle",
-  douyinName: "Hush",
-  wechat: "your-wechat-id",
-  keywords: ["技术博客", "笔记"]
+  email: "ggr77654@gmail.com",
+  github: "https://github.com/ggr-hush",
+  githubName: "ggr-hush",
+  keywords: ["技术博客", "日常"]
 };
 
 export const navItems = [
