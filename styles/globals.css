@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg: #faf6f0;
+  --surface: #fdfbf7;
+  --surface-elevated: #f4ece1;
+  --border: rgba(60, 40, 20, 0.1);
+  --text-primary: #2a2520;
+  --text-secondary: #5c4f42;
+  --text-muted: #8a7a66;
+  --accent: #8b6f47;
+  --accent-soft: rgba(139, 111, 71, 0.12);
+  --tag-bg: #f4ece1;
+  --tag-text: #5c4f42;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: #14110d;
+  --surface: #1c1812;
+  --surface-elevated: #25201a;
+  --border: rgba(180, 150, 100, 0.18);
+  --text-primary: #f5efe4;
+  --text-secondary: #d4c8b0;
+  --text-muted: #a89880;
+  --accent: #c9a878;
+  --accent-soft: rgba(201, 168, 120, 0.14);
+  --tag-bg: rgba(201, 168, 120, 0.1);
+  --tag-text: #f0d8b0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "ss01", "ss02";
+}
+
+@media (max-width: 768px) {
+  main :where(h1, h2, h3, p, li, a, span) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

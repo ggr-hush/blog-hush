@@ -1,0 +1,76 @@
+---
+title: "Hello, blog-hush"
+description: "这是 blog-hush 骨架的第一篇示例文章，用于演示 MDX 渲染管线和 frontmatter 字段。"
+date: "2026-06-26"
+category: "技术笔记"
+tags: ["博客", "Next.js", "MDX"]
+featured: true
+draft: false
+---
+
+## 为什么写这篇
+
+这是一个占位文章，用于验证 Next.js App Router + MDX + KaTeX + rehype-pretty-code + remark-gfm 在 blog-hush 骨架下能完整渲染。下面这几种元素都会经过对应的 remark / rehype 插件。
+
+## 列表
+
+无序列表：
+
+- 第一项
+- 第二项
+- 第三项
+
+有序列表：
+
+1. 安装依赖
+2. 修改 `lib/site.ts`
+3. 写文章
+
+## 代码块
+
+```ts
+type Post = {
+  title: string;
+  description: string;
+  date: string;
+  category: string;
+  tags: string[];
+  featured?: boolean;
+  draft?: boolean;
+};
+
+export const posts: Post[] = [];
+```
+
+```bash
+npm install
+npm run dev
+```
+
+## 表格
+
+| 字段 | 类型 | 必填 |
+| --- | --- | --- |
+| title | string | 是 |
+| description | string | 是 |
+| date | string (ISO) | 是 |
+| category | string | 是 |
+| tags | string[] | 是 |
+| featured | boolean | 否 |
+| draft | boolean | 否 |
+
+## 引用
+
+> 写文章本身不是目的，把模糊的想法逼成可复用的判断才是。
+
+## 数学公式
+
+行内公式 $E = mc^2$。块级：
+
+$$
+\mathrm{score} = \sum_{i=1}^{n} w_i \cdot \mathrm{rel}_i
+$$
+
+## 链接
+
+参考 [Next.js 文档](https://nextjs.org/docs) 了解更多。
